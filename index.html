@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Adivinhe!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="parte1">
+        <div class="header">
+          <img class="bandeira_header" src="midia/bandeira_header.svg" />
+        </div>
+        <div class="hr1"></div>
+        <div class="resultado">
+          <div class="textoResultado">?</div>
+        </div>
+      </div>
+      <div class="parte2">
+        <div class="esquerda">
+          <p class="feedback">Tenta a sorte!</p>
+          <input class="input" id="input" type="number" />
+          <div class="btns">
+            <button class="btn_denovo">De novo</button>
+            <button class="btn_checar">checar</button>
+          </div>
+          <p class="instrucao">Adivinhe entre 1 e 20</p>
+        </div>
+        <div class="direita">
+          <img id="img" src="midia/cup_caracter.png" />
+          <div class="scores">
+            <p>Score: <span>16</span></p>
+            <p>Highscore: <span>18</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
