@@ -4,7 +4,7 @@ let numerosecreto = Math.floor(Math.random() * 20) + 1; //gerar numero aleatorio
 let score = 20; //vidas
 let highscore = 0; //recorde
 let feedback = document.querySelector('.feedback');
-console.log(numerosecreto);
+
 function knock() {
   const img = document.querySelector('.knockout');
   img.classList.add('active');
@@ -13,7 +13,6 @@ function knock() {
   sound.volume = 1.0;
   sound.play();
 }
-
 function mgameover() {
   let sound = new Audio();
   sound.src = 'midia/gameover.mp3';
@@ -52,6 +51,9 @@ document.querySelector('.btn_checar').addEventListener('click', function () {
     document.querySelector('.textoResultado').textContent = numerosecreto;
     document.querySelector('.img').src = 'midia/cup_good.png';
     knock();
+    setTimeout(function () {
+      document.querySelector('.knockout').classList.remove('active');
+    }, 4000);
     //colocar recorde
     if (score > highscore) {
       highscore = score;

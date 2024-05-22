@@ -227,7 +227,7 @@ img {
   z-index: 2;
   width: 1000px;
   height: auto;
-  animation: size 3s in-ease-out;
+  animation: size 4s ease;
   opacity: 1;
 }
 
@@ -239,6 +239,6 @@ img {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(120%);
   }
 }
