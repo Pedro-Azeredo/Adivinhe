@@ -213,3 +213,32 @@ span {
 img {
   pointer-events: none;
 }
+
+.knockout {
+  position: absolute;
+  z-index: 2;
+  width: 1000px;
+  height: auto;
+  opacity: 0;
+}
+
+.active {
+  position: absolute;
+  z-index: 2;
+  width: 1000px;
+  height: auto;
+  animation: size 3s in-ease-out;
+  opacity: 1;
+}
+
+@keyframes size {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
