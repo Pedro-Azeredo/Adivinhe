@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&family=Sofadi+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
   margin: 0;
@@ -76,7 +76,7 @@ body {
   justify-content: center;
   color: black;
   font-size: 150px;
-  font-family: "Irish Grover";
+  font-family: 'Irish Grover';
   font-weight: 400;
 }
 
@@ -95,10 +95,11 @@ body {
 }
 
 .feedback {
-  margin-top: 73px;
+  margin-top: 33px;
+  margin-bottom: 20px;
   color: #0f0f0f;
   font-size: 23px;
-  font-family: "Irish Grover";
+  font-family: 'Irish Grover';
   font-weight: 400;
   word-wrap: break-word;
   margin-bottom: 20px;
@@ -112,8 +113,15 @@ body {
   border: 4px black solid;
   margin-bottom: 20px;
   font-size: 70pt;
-  font-family: "Irish Grover";
+  font-family: 'Irish Grover';
   text-align: center;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .btns {
@@ -128,7 +136,7 @@ body {
   background: #c34b29;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
   text-align: center;
-  font-family: "Irish Grover";
+  font-family: 'Irish Grover';
   font-size: 29px;
   font-style: normal;
   font-weight: 400;
@@ -144,7 +152,7 @@ body {
   background: #c34b29;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
   text-align: center;
-  font-family: "Irish Grover";
+  font-family: 'Irish Grover';
   font-size: 29px;
   font-style: normal;
   font-weight: 400;
@@ -155,7 +163,7 @@ body {
 .instrucao {
   color: #0f0f0f;
   text-align: center;
-  font-family: "Irish Grover";
+  font-family: 'Irish Grover';
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -179,7 +187,7 @@ body {
 .scores {
   width: 400px;
   height: 100px;
-  font-family: "Irish Grover";
+  font-family: 'Irish Grover';
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -200,4 +208,8 @@ span {
 
 .btn_denovo:hover {
   color: #e2b10c;
+}
+
+img {
+  pointer-events: none;
 }
