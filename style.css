@@ -257,4 +257,7 @@ img {
   .btns {
     margin-left: 0.9rem;
   }
+  .container {
+    width: 100vw;
+  }
 }
