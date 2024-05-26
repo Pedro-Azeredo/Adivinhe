@@ -24,7 +24,8 @@ body {
   margin: auto;
   background-color: #bdd0ce;
   width: calc(42vw);
-
+  position: relative;
+  z-index: 0;
   border-radius: 25px;
   border: 2px dashed #0f0f0f;
   box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25);
@@ -57,18 +58,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   position: relative;
-}
-.resultado::after {
-  content: '';
-  display: block;
-  width: 350%;
-  height: 0;
-  border: 1px solid black;
-  position: absolute;
-  bottom: -1rem;
-  z-index: 0;
+  z-index: 2;
 }
 
 .textoResultado {
@@ -90,6 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .feedback {
@@ -103,8 +95,7 @@ body {
 }
 
 .input {
-  width: 100%;
-  height: 125px;
+  width: 54%;
   background: white;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border: 4px black solid;
@@ -113,7 +104,6 @@ body {
   font-family: 'Irish Grover';
   text-align: center;
   outline: none;
-  margin-left: 0.9rem;
 }
 
 input::-webkit-outer-spin-button,
@@ -124,15 +114,15 @@ input::-webkit-inner-spin-button {
 
 .btns {
   display: flex;
-
-  gap: 0.6rem;
+  justify-content: center;
+  gap: 0.8rem;
   font-family: 'Irish Grover';
 }
 
 .btn_checar {
   margin: 0;
   width: 50%;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 10px;
   border: 2px solid #000;
   background: #c34b29;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -186,8 +176,8 @@ input::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 0px 15px;
-  margin-bottom: 0px;
+  padding: 20px;
+
   text-align: center;
 }
 
@@ -259,5 +249,17 @@ img {
   }
   .container {
     width: 100vw;
+  }
+  .scores {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .instrucao {
+    margin: 0px;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .input {
+    width: 100%;
   }
 }
